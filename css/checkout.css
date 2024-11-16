@@ -1,0 +1,44 @@
+.checkout-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+}
+.card-custom {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(17, 17, 43);
+}
+.form-control:focus {
+    box-shadow: none; 
+    border-color: #6c757d;
+}
+.btn-delivery-method {
+    width: 100%;
+    margin-right: 10px; 
+}
+.btn-primary, .btn-secondary {
+    border-radius: 30px;
+    padding: 8px 20px;
+}
+.payment-method img {
+    width: 50px;
+    margin-right: 10px;
+}
+.order-summary .price {
+    font-weight: 600;
+}
+.total-section {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.checkout-button {
+    border-radius: 30px;
+    padding: 12px;
+    width: 100%;
+}
+.checkbox-label {
+    font-size: 0.9rem;
+}

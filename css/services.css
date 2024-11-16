@@ -1,0 +1,27 @@
+.service-box {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background:transparent;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.service-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px; 
+    color: #e5dcdc;
+}
+.service-box p {
+    font-size: 1rem;
+    color: #d3d1d1;
+} 
+.service-box img {
+    width: 80px;
+    height: 80px; 
+    margin-bottom: 15px;
+    border-radius: 15px;
+}

@@ -1,0 +1,72 @@
+.filter-sidebar {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+ 
+.filter-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.filter-section label {
+    display: block;
+    margin: 5px 0;
+}
+
+.stars {
+    color: #f5a623;
+    font-size: 12px;
+}
+
+.more-btn, .apply-btn {
+    display: block;
+    background-color: #ff5722;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.more-btn {
+    background-color: transparent;
+    color: #666;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.price-range .price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price-inputs input {
+    width: 45%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.apply-btn {
+    margin-top: 10px;
+    width: 100%;
+}

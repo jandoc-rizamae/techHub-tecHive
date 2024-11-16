@@ -1,0 +1,48 @@
+.hero-section .carousel-item {
+    height: 309px; 
+  }
+  .hero-section .carousel-item img {
+    height: 100%; 
+    width: 100%; 
+    object-fit: cover;  
+  }
+  .home-upper{
+    background: linear-gradient(to right,#f19bab, #c81b3b, #030458);
+  }
+  .cat-center{
+    margin-right: 30px;
+  }
+  .five-column{
+    width: 19%;
+    margin: 5px;
+  }
+  .border-image{
+    border: 1px solid #965b93;
+    padding: 2px; 
+    box-shadow: 2px 2px 3px #965b93; 
+  }
+  .card{
+    border: 1px solid #ffffff ;
+    padding: 2px;  
+    box-shadow: 2px 2px 3px rgb(66, 63, 147);
+    background-color: transparent; 
+  } 
+  .h40{ 
+    background-color:  #fdfdfd;
+  }
+  .home-upper {
+    background: linear-gradient(to right, #f19bab, #c81b3b, #030458),
+                url('/images/background/bg2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed; /* Enables parallax effect */
+    color: #fff;
+  } 
+  .discount-image{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      transition: position 0.3s, bottom 0.3s;
+  }
+  .stuck {
+      position: absolute;
+  }

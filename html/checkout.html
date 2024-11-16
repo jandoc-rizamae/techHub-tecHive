@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="/css/slideup.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+
+</head>
+<body style="background-image: url('/images/background/bg5.png'); background-repeat: repeat-y; background-size: contain;">
+  <!-- navbar-->
+  <nav class="navbar navbar-expand-lg" style="background:radial-gradient(rgb(7, 7, 50), rgb(18, 31, 69))">
+    <div class="container-fluid d-flex align-items-center m-0">
+        <a href="home_page.html" class="navbar-brand m-0"> 
+            <img class="m-0" width="100px" height="80px" src="/images/final.png" alt="Logo">
+            <span style="color: #ffffff; font-size: 40px; font-style: oblique; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Techub TecHive
+            </span> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown" style="background-color: rgb(205, 201, 196);">
+                        <li><a class="dropdown-item" href="whychooseus.html">Why choose us?</a></li>
+                        <li><a class="dropdown-item" href="pricing_plan.html">Pricing plan</a></li>
+                        <li><a class="dropdown-item" href="services.html">Services</a></li>
+                        <li><a class="dropdown-item" href="about_us.html">About us</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                    </ul>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link text-light position-relative" href="cart.html">
+                      <i class="bi bi-cart"></i>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          3
+                      </span>
+                  </a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link text-light position-relative dropdown-toggle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-bell"></i> <!-- Notification Icon from Bootstrap Icons -->
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          5 
+                      </span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown"  style="background-color: rgb(205, 201, 196);">
+                      <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                      <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                      <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                      <li><a class="dropdown-item" href="#">Notification 4</a></li>
+                      <li><a class="dropdown-item" href="#">Notification 5</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item-img dropdown" style="margin-left: 30px;">
+                    <a class="nav-link dropdown-toggle p-0" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img style="border-radius: 40px;" width="50px" height="50px" src="/images/profile.jpg" alt="Profile Picture">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown"  style="background-color: rgb(205, 201, 196);">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+
+    <div class="checkout-container">
+        <!-- Contact Information Section -->
+        <div class="col-lg-7 card-custom">
+            <h3 class="mb-4 text-light slide-up">Checkout</h3>
+            <form class="text-light slide-up">
+                <!-- Contact Information -->
+                <h5>1. Contact Information</h5>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Edward">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Franz">
+                    </div>
+                    <div class="col-12">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="+380 555-0195">
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="binary@gmail.com">
+                    </div>
+                </div>
+
+                <!-- Delivery Method -->
+                <h5>2. Delivery Method</h5>
+                <div class="btn-group w-100 mb-4" role="group">
+                    <input type="radio" class="btn-check" name="deliveryMethod" id="storePickup" autocomplete="off">
+                    <label class="btn btn-outline-secondary btn-delivery-method" for="storePickup">Store</label>
+
+                    <input type="radio" class="btn-check" name="deliveryMethod" id="delivery" autocomplete="off" checked>
+                    <label class="btn btn-outline-secondary btn-delivery-method" for="delivery">Delivery</label>
+                </div>
+
+                <!-- Date and Address -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label for="deliveryDate" class="form-label">Delivery Date</label>
+                        <input type="date" class="form-control" id="deliveryDate" value="2021-11-28">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="deliveryTime" class="form-label">Delivery Time</label>
+                        <input type="time" class="form-control" id="deliveryTime" value="13:00">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-control" id="state" placeholder="New Jersey">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="zipCode" class="form-label">ZIP Code</label>
+                        <input type="text" class="form-control" id="zipCode" placeholder="464352">
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <h5>3. Payment Method</h5>
+                <div class="payment-method mb-4 slide-up">
+                    <button type="button" class="btn btn-outline-primary"><img src="/images/delivery/gcash-removebg-preview.png" alt="Visa"></button>
+                    <button type="button" class="btn btn-outline-primary"><img src="/images/delivery/cod-removebg-preview.png" alt="MasterCard"></button>
+                    <button type="button" class="btn btn-outline-primary"><img src="/images/delivery/Google_Pay_Logo_in_India_Has_Been_Updated_-removebg-preview.png" alt="Apple Pay"></button>
+                    <button type="button" class="btn btn-outline-primary">Other</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="col-lg-5 card-custom text-light slide-up">
+            <h5 class="text-light">Order</h5>
+            <div class="d-flex align-items-center mb-3">
+                <img src="/images/laptop/l2.png" alt="Product Image" class="me-3 rounded">
+                <div>
+                    <h6 class="mb-1">Acer Laptop</h6>
+                    <p class="mb-0">Size: L | Color: Red</p>
+                </div>
+            </div>
+
+            <!-- Price Breakdown -->
+            <ul class="list-unstyled mb-4">
+                <li class="d-flex justify-content-between">
+                    <span>Subtotal</span>
+                    <span class="price">$59</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                    <span>Discount</span>
+                    <span class="price">-$10</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                    <span>Shipping</span>
+                    <span class="price">+ $10</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="d-flex justify-content-between total-section mb-4">
+                <span>Total</span>
+                <span class="price">$69</span>
+            </div>
+
+            <!-- Checkout Button and Terms -->
+            <a href="order_confirmation.html"><button type="button" class="btn btn-primary checkout-button mb-3">Place order</button></a>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="terms">
+                <label class="form-check-label checkbox-label" for="terms">
+                    By continuing, you’re agreeing to our Terms & Conditions
+                </label>
+            </div>
+        </div>
+    </div>
+    <!--  Footer -->
+    <footer class="footer mt-5">
+        <div style="margin-left: 100px; margin-right: 100px;">
+        <div class="row text-center text-md-start">
+            <div class="col-md-4 mb-4">
+            <div class="logo slide-up">
+                <img src="/images/final.png" alt="Logo" width="100" height="100"> TechHub TecHive
+            </div>
+            <p class="slide-up">the most trusted and fast shipping ecommerce website</p>
+            </div>
+            <div class="col-md-3 mb-4">
+            <h6 class="slide-up">Navigation</h6>
+            <ul class="list-unstyled slide-up">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">Pages</a></li>
+                <li><a href="#" class="text-white">Cart</a></li>
+                <li><a href="#" class="text-white">Notification</a></li>
+            </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+            <h6>Quick Link</h6>
+            <ul class="list-unstyled slide-up">
+                <li><a href="#" class="text-white">Contact Us</a></li>
+                <li><a href="#" class="text-white">FAQs</a></li>
+                <li><a href="#" class="text-white">Why choose us?</a></li>
+                <li><a href="#" class="text-white">services</a></li>
+                <li><a href="#" class="text-white">Pricing Plan</a></li>
+                <li><a href="#" class="text-white">Contact</a></li>
+
+            </ul>
+            </div>
+            <div class="col-md-2 mb-4">
+            <h6>Services</h6>
+            <ul class="list-unstyled slide-up">
+                <li><a href="#" class="text-white">Tech support</a></li>
+                <li><a href="#" class="text-white">Installation service</a></li>
+                <li><a href="#" class="text-white">Warranty</a></li>
+                <li><a href="#" class="text-white">Repair</a></li>
+                <li><a href="#" class="text-white">Upgrades</a></li>
+                <li><a href="#" class="text-white">Consultation</a></li>
+            </ul>
+            </div>
+        </div>
+          <div class="row">
+              <div class="p-2 slide-up">
+                  <a href="#">facebook</a>
+                  <a href="#">twitter</a>
+                  <a href="#">instagram</a>
+                  <a href="#">youtube</a>
+                  <span style="margin-left: 200px;">
+                    &copy; 2022 tech-hub tech-hive • All Rights Reserved
+                  </span>
+              </div>
+          </div>
+        </div>
+    </footer>
+  <!-- End Footer -->
+    <script src="/js/slideup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

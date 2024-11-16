@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Hub - Prototype</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/filter.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/slideup.css">
+  <link rel="stylesheet" href="/css/hover.css">
+  <link rel="stylesheet" href="/css/home.css"> 
+  <link rel="stylesheet" href="/css/navbar.css">
+</head> 
+<body style="background-image: url('/images/background/bg5.png'); background-repeat: repeat-y; background-size: contain;">
+  <!-- navbar-->
+  <nav class="navbar navbar-expand-lg" style="background:radial-gradient(rgb(7, 7, 50), #121f45)">
+    <div class="container-fluid d-flex align-items-center m-0">
+        <a href="home_page.html" class="navbar-brand m-0"> 
+            <img class="m-0" width="100px" height="80px" src="/images/final.png" alt="Logo">
+            <span style="color: #ffffff; font-size: 40px; font-style: oblique; font-family: Georgia, 'Times New Roman', Times, serif;">
+              Techub TecHive
+            </span> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span> 
+        </button> 
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu" aria-labelledby="pagesDropdown" style="background-color: rgb(205, 201, 196);">
+                        <li><a class="dropdown-item" href="whychooseus.html">Why choose us?</a></li>
+                        <li><a class="dropdown-item" href="pricing_plan.html">Pricing plan</a></li>
+                        <li><a class="dropdown-item" href="services.html">Services</a></li>
+                        <li><a class="dropdown-item" href="about_us.html">About us</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                    </ul>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link text-light position-relative" href="cart.html">
+                      <i class="bi bi-cart"></i>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          3
+                      </span>
+                  </a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link text-light position-relative dropdown-toggle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-bell"></i> <!-- Notification Icon from Bootstrap Icons -->
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          5 
+                      </span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown"  style="background-color: rgb(205, 201, 196);">
+                      <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                      <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                      <li><a class="dropdown-item" href="#">Notification 3</a></li>
+                      <li><a class="dropdown-item" href="#">Notification 4</a></li>
+                      <li><a class="dropdown-item" href="#">Notification 5</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item-img dropdown" style="margin-left: 30px;">
+                    <a class="nav-link dropdown-toggle p-0" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img style="border-radius: 40px;" width="50px" height="50px" src="/images/izang.jpg" alt="Profile Picture">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown"  style="background-color: rgb(205, 201, 196);">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+  <!-- Home Upper -->
+<section class="home-upper py-5 d-flex align-items-end justify-content-center hero-section" style="background-image:url('/images/background/bg2.jpg'); background-size: cover; background-attachment:scroll; box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.405);">
+  <div class="container-fluid"> 
+    <div class="row">   
+      <div class="col-md-7 d-flex px-0" style="position:relative; top: 40px;">
+        <div class="col-4 d-flex flex-column pr-1"> 
+          <div class="bg-dark text-white d-flex align-items-center justify-content-center mb-2" style="height: 150px; border-top-left-radius: 10px;">
+            <img src="/images/banner/banner1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: 10px;">
+          </div>
+          <div class="bg-dark text-white d-flex align-items-center justify-content-center" style="height: 150px; border-bottom-left-radius: 10px;">
+            <img src="/images/banner/banner2.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-bottom-left-radius: 10px;">
+          </div>
+        </div>
+        <div class="col-8 pl-1">  
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/banner/babber12.jpg" class="d-block w-100" alt="Image 3b" style="width: 100%; height: 100%; object-fit: cover; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+              </div>  
+              <div class="carousel-item" style="box-shadow: 10px 10px 15px rgba(16, 16, 16, 0.513);">
+                <img src="/images/banner/banner12.jpg" class="d-block w-100" alt="Image 3c" style="width: 100%; height: 100%; object-fit: cover; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+              </div> 
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 d-flex flex-column justify-content-end p-4">
+        <h2 class="text-white font-weight-bold mb-3 ml-5" style="font-size: 40px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">"YOUR ONE STOP <br> HUB FOR ALL <br>THINGS TECH"</h2>
+        <p class="text-white lead ml-5">Welcome to Tech Hub<br>Tech Hive</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- Categories -->
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="text-center flex-grow-1 text-light" style="text-shadow: 3px 4px #965b93;"><b><i>T</i></b>rending <b><i>C</i></b>ategories</h2>
+      <span class="text-primary">
+          <small>
+            <div class="dropdown">
+              <button style="font-style: oblique; font-family: Georgia, 'Times New Roman', Times, serif;box-shadow: 2px 2px 8px #965b93;" class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  See all
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #e7e7e7;">
+                  <li><a href="view_tv.html" class="dropdown-item cursor-pointer" >Tv</a></li>
+                  <li><a href="view_pc.html" class="dropdown-item cursor-pointer" >Pc</a></li>
+                  <li><a href="view_keyboard.html" class="dropdown-item cursor-pointer" >keyboard</a></li>
+                  <li><a href="view_ram.html" class="dropdown-item cursor-pointer" >Ram</a></li>
+                  <li><a href="view_motherboard.html" class="dropdown-item cursor-pointer" >motherboard</a></li>
+                  <li><a href="view_laptop.html" class="dropdown-item cursor-pointer" >laptop</a></li>
+                  <li><a href="view_cctv.html" class="dropdown-item cursor-pointer" >cctv</a></li>
+                  <li><a href="view_phone.html" class="dropdown-item cursor-pointer" >phone</a></li>
+                  <li><a href="view_speaker.html" class="dropdown-item cursor-pointer" >speaker</a></li>
+                  <li><a href="view_airpods.html" class="dropdown-item cursor-pointer" >airpods</a></li>
+                  <li><a href="view_mouse.html" class="dropdown-item cursor-pointer" >mouse</a></li>
+              </ul>
+          </div>
+          </small>
+      </span>
+  </div>
+  <div class="d-flex flex-wrap justify-content-center" style="margin-left:0px;">
+      <div class="cat-center slide-up">
+          <a href="view_laptop.html"><img src="/images/categories/laptop.png" alt="Laptop" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: contain;"></a>
+          <p class="small text-light">Laptop</p>
+      </div>
+      <div class="cat-center slide-up">
+          <a href="view_phone.html"><img src="/images/categories/iphone.png" alt="iPhone" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: contain;"></a>
+          <p class="small text-light">iPhone</p>
+      </div>
+      <div class="cat-center slide-up">
+          <a href="view_speaker.html"><img src="/images/categories/speaker.png" alt="Speaker" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: cover;"></a>
+          <p class="small text-light">Speaker</p>
+      </div>
+      <div class="cat-center slide-up">
+          <a href=""><img src="/images/categories/air.png" alt="AirPods" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: cover;"></a>
+          <p class="small text-light">AirPods</p>
+      </div>
+      <div class="cat-center slide-up">
+          <a href="view_pc.html"><img src="/images/categories/tv.png" alt="tv" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: cover;"></a>
+          <p class="small text-light">TV</p>
+      </div>
+      <div class="cat-center slide-up">
+          <a href="view_cctv.html"><img src="/images/categories/cctv.png" alt="Security Camera" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: cover;"></a>
+          <p class="small text-light">Security Camera</p>
+      </div>
+      <div class="cat-center slide-up">
+          <a href="view_keyboard.html"><img src="/images/categories/keyboard.png" alt="Keyboard" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: cover;"></a>
+          <p class="small text-light">Keyboard</p>
+      </div>
+      <div class="cat-center slide-up">
+        <a href="view_pc.html"><img src="/images/categories/tv.png" alt="TV" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: cover;"></a>
+        <p class="small text-light">TV</p>
+    </div>
+    <div class="cat-center slide-up">
+        <a href="view_cctv.html"><img src="/images/categories/cctv.png" alt="Security Camera" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: cover;"></a>
+        <p class="small text-light">Security Camera</p>
+    </div>
+    <div class="cat-center slide-up">
+        <a href="view_keyboard.html"><img src="/images/categories/keyboard.png" alt="Keyboard" class="rounded-circle border-image mx-auto mb-2" style="width: 70px; height: 70px; object-fit: cover;"></a>
+        <p class="small text-light">Keyboard</p>
+    </div>
+    </div>
+  </div>
+  <!-- end category -->
+  <div class="container mt-5">
+    <h2 class="text-light" style="text-shadow: 3px 4px #965b93;"><b><i>T</i></b>op <b><i>N</i></b>ew <b><i>A</i></b>rrivals</h2>
+    <div class="row g-3">
+      <!-- Product 1 -->
+      <div class="col-lg-4 slide-up">
+        <a href="view_phone.html">
+        <div class="card" style="border: 1px solid #965b93; height: 320px;">
+          <img src="/images/new arivals/iphone1.png" class="card-img-top" alt="iPhone 13" style="height:250px; object-fit: contain;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar">View Similar Products</span>
+          </div>
+          <div class="card-body" style="background-color:rgb(232, 232, 209); height: 50px;"> 
+            <div class="d-flex justify-content-between align-items-center text-dark">
+              <h5 class="card-title text-dark"><b>iPhone 13</b></h5> 
+              <p class="card-text text-dark"><b>₱999</b></p>
+            </div>  
+          </div>
+        </div>
+        </a>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-lg-4 slide-up mt-3">
+        <a href="view_keyboard.html">
+        <div class="card" style="border: 1px solid #965b93; height: 280px;">
+          <img src="/images/new arivals/k1.png" class="card-img-top" alt="Laptop" style="height:210px; object-fit: contain;">
+          <div class="card-overlay"> 
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar">View Similar Products</span>
+          </div>
+          <div class="card-body" style="background-color:#ffffff; height: 50px;">
+            <div class="d-flex justify-content-between align-items-center text-dark">
+              <h5 class="card-title text-dark"><b>Laptop Pro</b></h5> 
+              <p class="card-text text-dark"><b>₱1200</b></p>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-lg-4 slide-up mt-5">
+        <a href="view_mouse.html">
+        <div class="card" style="border: 1px solid #965b93; height: 240px;">
+          <img src="/images/new arivals/m1.png" class="card-img-top" alt="Speaker" style="height:170px; object-fit: contain;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar">View Similar Products</span>
+          </div>
+          <div class="card-body" style="background-color:rgb(232, 232, 209); height: 50px;">
+            <div class="d-flex justify-content-between align-items-center text-dark">
+              <h5 class="card-title text-dark"><b>Bluetooth Speaker</b></h5> 
+              <p class="card-text text-dark"><b>₱350</b></p>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Best seller -->
+  <div class="container mt-5">
+    <h2 class="text-light" style="text-shadow: 3px 4px #965b93;"><b><i>B</i></b>est <b><i>S</i></b>eller</h2>
+    <div class="row">
+      <div class="five-column ml-2">
+        <a href="view_keyboard.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 200px;">
+            <img height="154px" width="214px" src="/images/keyboard/k1.png" alt="">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+            </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+                <span><b>Mechanical Keyboard</b></span>
+                <span><b>₱600.50</b></span>
+            </div>
+        </div>
+        </a>
+        <a href="view_laptop.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 230px;">
+            <img height="190px" width="213px" src="/images/laptop/l1.png" alt="">
+              <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+                <span><b>Acer laptop</b></span>
+                <span><b>₱450.00</b></span>
+            </div>
+        </div>
+        </a>
+        <a href="view_laptop.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px;">
+            <img height="110px" width="213px" src="/images/laptop/l12.png" alt="">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+                <span><b>HP laptop</b></span>
+                <span><b>₱500.00</b></span>
+            </div>
+        </div>
+        </a>
+      </div>
+      <div class="five-column">
+        <a href="view_motherboard.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px;">
+            <img src="/images/motherboard/m1.png" alt="" style="height: 110px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+                <span><b>Product Name</b></span>
+                <span><b>₱ Price</b></span>
+            </div>
+        </div>
+        </a>
+        <a href="view_pc.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 232px;">
+            <img src="/images/pc/p2.png" alt="" style="height: 190px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+                <span><b>Product Name</b></span>
+                <span><b>₱ Price</b></span>
+            </div>
+        </div>
+        </a>
+        <a href="view_speaker.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 200px;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <img src="/images/speaker/s8.png" alt="" style="height: 160px; width: 100%;">
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+                <span><b>Product Name</b></span>
+                <span><b>₱ Price</b></span>
+            </div>
+        </div>
+        </a>
+      </div>
+      <div class="five-column">
+        <a href="view_speaker.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 180px;">
+           <img src="/images/speaker/s8.png" alt="" style="height: 140px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+                <span><b>Product Name</b></span>
+                <span><b>₱ Price</b></span>
+            </div> 
+        </div>
+        </a>
+        <a href="view_ram.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 220px;">
+            <img src="/images/ram/r4.png" alt="" style="height: 180px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+              <span><b>Product Name</b></span>
+              <span><b>₱ Price</b></span>
+            </div>
+        </div>
+        </a>
+        <a href="view_pc.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 182px;">
+            <img src="/images/pc/p5.png" alt="" style="height: 142px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+              <span><b>Product Name</b></span>
+              <span><b>₱ Price</b></span>
+            </div> 
+        </div>
+        </a>
+    </div> 
+    <div class="five-column">
+      <a href="view_ram.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px;">
+            <img src="/images/ram/r4.png" alt="" style="height: 110px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+              <span><b>Product Name</b></span>
+              <span><b>₱ Price</b></span>
+            </div>
+        </div>
+      </a>
+      <a href="view_motherboard.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 232px;">
+            <img src="/images/motherboard/m4.png" alt="" style="height: 192px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+              <span><b>Product Name</b></span>
+              <span><b>₱ Price</b></span>
+            </div>
+        </div>
+      </a>
+        <a href="view_speaker.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 200px;">
+           <img src="/images/speaker/s5.png" alt="" style="height: 160px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+              <span><b>Product Name</b></span>
+              <span><b>₱ Price</b></span>
+            </div>
+        </div>
+    </div>
+    <div class="five-column">
+      <a href="view_laptop.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 190px;">
+            <img src="/images/laptop/l11.png" alt="" style="height: 150px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+              <span><b>Product Name</b></span>
+              <span><b>₱ Price</b></span>
+            </div>
+        </div>
+      </a>
+      <a href="view_speaker.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 170px;">
+            <img src="/images/speaker/s9.png" alt="" style="height: 130px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+              <span><b>Product Name</b></span>
+              <span><b>₱ Price</b></span>
+            </div>
+        </div>
+      </a>
+      <a href="view_laptop.html">
+        <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 220px;">
+            <img src="/images/laptop/l10.png" alt="" style="height: 180px; width: 100%;">
+            <div class="card-overlay">
+                <i class="bi bi-heart favorite-icon"></i>
+                <span class="view-similar text-center">View Similar Products</span>
+              </div>
+            <div class="h40" style="background-color:rgb(232, 232, 209);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+              <span><b>Product Name</b></span>
+              <span><b>₱ Price</b></span>
+            </div>
+        </div>
+      </a> 
+      </div>   
+    </div>
+  </div>
+  <!-- discover -->
+  <div class="container mt-5" >
+  <h2 class="text-center text-light" style="text-shadow: 3px 4px #965b93;"><b><i>D</i></b>iscover <b><i>m</i></b>ore</h2>
+  <div class="row">
+    <div class="five-column ml-2 ">
+      <div class="filter-sidebar" style="border: 1px solid black;">
+        <h3 class="filter-title">SEARCH FILTER</h3>
+        <div class="filter-section">
+            <h4>By Category</h4>
+            <label><input type="checkbox"> Hoodies (528)</label>
+            <label><input type="checkbox"> Women's Apparel (52)</label>
+            <label><input type="checkbox"> Babies & Kids (26)</label>
+            <label><input type="checkbox"> Jackets & Sweaters (24)</label>
+            <button class="more-btn">More</button>
+        </div>
+        <div class="filter-section">
+            <h4>Rating</h4>
+            <label><input type="checkbox"><span class="stars">★★★★★</span></label>
+            <label><input type="checkbox"><span class="stars">★★★★☆</span></label>
+            <label><input type="checkbox"><span class="stars">★★★☆☆</span></label>
+            <label><input type="checkbox"><span class="stars">★★☆☆☆</span></label>
+            <button class="more-btn">More</button>
+        </div>
+        <div class="filter-section price-range">
+            <h4>Price Range</h4>
+            <div class="price-inputs">
+                <input type="number" placeholder="MIN">
+                <span>—</span>
+                <input type="number" placeholder="MAX">
+            </div>
+            <button class="btn btn-outline-dark mt-1">APPLY</button>
+        </div>
+        <div class="filter-section">
+            <h4>Shipped From</h4>
+            <label><input type="checkbox"> Domestic</label>
+            <label><input type="checkbox"> Overseas</label>
+            <label><input type="checkbox"> Metro Manila</label>
+        </div>
+      </div>    
+    </div> 
+    <div class="five-column">
+      <a href="view_keyboard.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px;">
+          <img src="/images/keyboard/k2.png" alt="" style="height: 110px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+      </a>
+      <a href="view_laptop.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 232px;">
+          <img src="/images/laptop/l4.png" alt="" style="height: 190px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255); height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+      </a>
+      <a href="view_ram.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px;">
+          <img src="/images/ram/r2.png" alt="" style="height: 110px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+      </a>
+      <a href="view_keyboard.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 120px;">
+          <img src="/images/keyboard/k7.png" alt="" style="height: 80px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style=" border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+      </a>
+  </div> 
+  <div class="five-column">
+    <a href="view_speaker.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px; height: 180px;">
+          <img src="/images/speaker/s2.png" alt="" style="height: 140px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div> 
+      </div>
+    </a>
+    <a href="view_laptop.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px ; height: 220px;">
+          <img src="/images/laptop/l6.png" alt="" style="height: 180px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+    </a>
+    <a href="view_speaker.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px;">
+          <img src="/images/speaker/s6.png" alt="" style="height: 110px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div> 
+    </a>
+    <a href="view_keyboard.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 100px;">
+          <img src="/images/keyboard//k4.png" alt="" style="height: 60px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+    </a>
+  </div>
+  <div class="five-column">
+    <a href="view_laptop.html">
+      <div class="slide-up card mb-3" style="border: 1px solid#965b93; height: 150px;">
+          <img src="/images/laptop/l6.png" alt="" style="height: 110px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+    </a>
+    <a href="view_motherboard.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 232px;">
+          <img src="/images/motherboard/m5.png" alt="" style="height: 192px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+    </a>
+    <a href="view_keyboard.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 150px;">
+          <img src="/images/keyboard/k5.png" alt="" style="height: 110px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+    </a>
+    <a href="view_pc.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 120px;">
+          <img src="/images/pc/p4.png" alt="" style="height: 80px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+    </a>
+  </div>
+  <div class="five-column">
+    <a href="view_speaker.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 100px;">
+          <img src="/images/speaker/s7.png" alt="" style="height: 60px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+    </a>
+    <a href="view_laptop.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 220px;">
+          <img src="/images/laptop/l8.png" alt="" style="height: 180px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div> 
+      </div>
+    </a>
+    <a href="view_ram.html">
+      <div class="slide-up card mb-3" style="border: 1px solid#965b93; height: 150px;">
+          <img src="/images/ram/r3.png" alt="" style="height: 110px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;"> 
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div> 
+      </div>
+    </a>
+    <a href="view_keyboard.html">
+      <div class="slide-up card mb-3" style="border: 1px solid #965b93; height: 180px;">
+          <img src="/images/keyboard/k6.png" alt="" style="height: 140px; width: 100%;">
+          <div class="card-overlay">
+            <i class="bi bi-heart favorite-icon"></i>
+            <span class="view-similar text-center">View Similar Products</span>
+          </div>
+          <div class="h40" style="border: 1px solid rgb(255, 255, 255);height: 40px; display: flex; justify-content: space-between; align-items: center; padding: 0 5px;">
+            <span><b>Product Name</b></span>
+            <span><b>₱ Price</b></span>
+          </div>
+      </div>
+    </a>
+    </div>   
+    </div>
+  </div>
+  <!-- pagination -->
+  <div class="w3-container">
+    <div class="w3-center">
+      <div class="w3-bar text-light">
+        <a href="#" class="w3-button">&laquo;</a>
+        <a href="#" class="w3-button">1</a>
+        <a href="#" class="w3-button">2</a>
+        <a href="#" class="w3-button">3</a>
+        <a href="#" class="w3-button">4</a>
+        <a href="#" class="w3-button">&raquo;</a>
+      </div>
+    </div> 
+  </div>
+  <br><br>
+  <!-- end upper section -->
+
+
+  <!-- footer -->
+  <footer class="footer mt-5">
+    <div style="margin-left: 100px; margin-right: 100px;">
+    <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+        <div class="logo slide-up">
+            <img src="/images/final.png" alt="Logo" width="100" height="100"> TechHub TecHive
+        </div>
+        <p class="slide-up">the most trusted and fast shipping ecommerce website</p>
+        </div>
+        <div class="col-md-3 mb-4">
+        <h6 class="slide-up">Navigation</h6>
+        <ul class="list-unstyled slide-up">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">Pages</a></li>
+            <li><a href="#" class="text-white">Cart</a></li>
+            <li><a href="#" class="text-white">Notification</a></li>
+        </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+        <h6>Quick Link</h6>
+        <ul class="list-unstyled slide-up">
+            <li><a href="#" class="text-white">Contact Us</a></li>
+            <li><a href="#" class="text-white">FAQs</a></li>
+            <li><a href="#" class="text-white">Why choose us?</a></li>
+            <li><a href="#" class="text-white">services</a></li>
+            <li><a href="#" class="text-white">Pricing Plan</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+
+        </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+        <h6>Services</h6>
+        <ul class="list-unstyled slide-up">
+            <li><a href="#" class="text-white">Tech support</a></li>
+            <li><a href="#" class="text-white">Installation service</a></li>
+            <li><a href="#" class="text-white">Warranty</a></li>
+            <li><a href="#" class="text-white">Repair</a></li>
+            <li><a href="#" class="text-white">Upgrades</a></li>
+            <li><a href="#" class="text-white">Consultation</a></li>
+        </ul>
+        </div>
+    </div>
+      <div class="row">
+          <div class="p-2 slide-up">
+              <a href="#">facebook</a>
+              <a href="#">twitter</a>
+              <a href="#">instagram</a>
+              <a href="#">youtube</a>
+              <span style="margin-left: 200px;">
+                &copy; 2022 tech-hub tech-hive • All Rights Reserved
+              </span>
+          </div>
+      </div>
+    </div>
+</footer>
+  <!-- End Footer -->
+  <div class="discount-image">
+    <img width="200px" height="250px" src="/images/background/bot.png" alt="">
+  </div>
+
+
+  <script>
+    window.addEventListener("scroll", function() {
+      const homeUpper = document.querySelector(".home-upper");
+      let offset = window.pageYOffset;
+      homeUpper.style.backgroundPositionY = offset * 0.5 + "px";
+    });
+  </script>
+  <script src="/js/slideup.js"></script>
+  <script src="/js/discount-bot.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
